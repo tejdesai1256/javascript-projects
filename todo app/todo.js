@@ -1,8 +1,22 @@
 let btn=document.querySelector('button');
 let ul=document.querySelector('ul');
 let inp=document.querySelector('input');
+let delBtn=document.querySelector('.delete');
 
 btn.addEventListener('click',function(){
-    console.log(inp.value);
+    let item=document.createElement('li');
+    item.innerText=inp.value;
+    let delBtn=document.createElement('button');
+    delBtn.innerText='Delete';
+    delBtn.classList.add('delete');
+    item.appendChild(delBtn);
+    ul.appendChild(item);
     inp.value='';
+});
+
+let delBtns=document.querySelectorAll('.delete');
+delBtns.forEach(function(btn){
+    btn.addEventListener('click',function(e){
+        e.target.parentElement.remove();
+    });
 });
