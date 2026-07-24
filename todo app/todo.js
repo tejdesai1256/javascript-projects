@@ -27,3 +27,8 @@ for(delBtn of delBtns2){
         e.target.parentElement.remove();
     }); 
 }
+
+//event deligation
+ul.addEventListener('click',function(){
+   console.log('ul clicked');
+    });
