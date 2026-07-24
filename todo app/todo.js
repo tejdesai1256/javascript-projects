@@ -20,3 +20,10 @@ delBtns.forEach(function(btn){
         e.target.parentElement.remove();
     });
 });
+
+let delBtns2=document.querySelectorAll('.delete');
+for(delBtn of delBtns2){
+    delBtn.addEventListener('click',function(e){
+        e.target.parentElement.remove();
+    }); 
+}
