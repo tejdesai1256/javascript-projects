@@ -30,5 +30,7 @@ for(delBtn of delBtns2){
 
 //event deligation
 ul.addEventListener('click',function(){
-   console.log('ul clicked');
+   console.log(event.target.nodeName);
     });
+
+    //initial commit1
