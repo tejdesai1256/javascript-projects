@@ -1,2 +1,3 @@
 ﻿# javascript-projects
 making projects for learning new things
+project making is also skill
